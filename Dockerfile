@@ -7,7 +7,7 @@ ENV NVM_VERSION 0.33.4
 
 # Install global modules
 RUN npm install -g \
-    nodemon
+    nodemon \
     create-react-app
 
 RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash
