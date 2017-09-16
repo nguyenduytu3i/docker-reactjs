@@ -10,15 +10,10 @@ RUN npm install -g \
     nodemon \
     create-react-app
 
-RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash
-
 # Check node
 CMD ["node"]
 
 # Create app directory
 WORKDIR /usr/src/app
-	
-# Bundle app source
-COPY . .
 
 EXPOSE 8080
